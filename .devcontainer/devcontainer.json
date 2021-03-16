@@ -1,4 +1,8 @@
 {
     "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu",
-    "initializeCommand": "touch heythere.txt"
+    "initializeCommand": "touch heythere.txt",
+    "containerEnv": { 
+        "MY_LOCAL_HOME": "${localEnv:HOME}",
+        "A_SIMPLE_KEY": "A_SIMPLE_VALUE"
+    }
 }
