@@ -1,3 +1,6 @@
 {
-    "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu"
+    "settings": {
+        "editor.formatOnSave": false,
+        "terminal.integrated.shell.linux": "/bin/zsh"
+     }
 }
