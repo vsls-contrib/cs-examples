@@ -10,7 +10,6 @@
         "MY_LOCAL_HOME": "${localEnv:HOME}",
         "A_SIMPLE_KEY": "A_SIMPLE_VALUE"
     },
-    "containerUser": "mock-container",
     "remoteUser": "mock-remote",
     "postCreateCommand": "echo `whoami`> whoami.txt && bash ./run-me.sh"
 }
