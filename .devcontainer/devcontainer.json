@@ -1,7 +1,6 @@
 {
     "settings": {
         "editor.formatOnSave": false,
-        "terminal.integrated.shell.linux": "/bin/zsh",
         "python.linting.pylintEnabled": "false"
      }
 }
