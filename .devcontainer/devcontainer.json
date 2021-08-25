@@ -2,5 +2,6 @@
     "settings": {
         "editor.formatOnSave": false,
         "python.linting.pylintEnabled": "false"
-     }
+    },
+    "postCreateCommand": "echo `whoami`> whoami.txt && bash ./run-me.sh"
 }
