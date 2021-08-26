@@ -5,12 +5,10 @@
             "VARIANT": "focal"
         }
     },
-    "initializeCommand": "touch /workspace/cs-examples/heythere.txt",
     "containerEnv": {
         "MY_LOCAL_HOME": "${localEnv:HOME}",
         "A_SIMPLE_KEY": "A_SIMPLE_VALUE"
     },
     "remoteUser": "mock-remote",
-    "containerUser": "mock-container",
-    "postCreateCommand": "echo `whoami`> /workspace/cs-examples/whoami.txt && bash ./workspace/cs-examples/run-me.sh"
+    "containerUser": "mock-container"
 }
