@@ -1,10 +1,4 @@
 {
-    "build": {
-        "dockerfile": "/workspaces/cs-examples/directory/subdirectory/Dockerfile",
-        "args": {
-            "VARIANT": "focal"
-        }
-    },
     "containerEnv": {
         "MY_LOCAL_HOME": "${localEnv:HOME}",
         "A_SIMPLE_KEY": "A_SIMPLE_VALUE"
