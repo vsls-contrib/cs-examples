@@ -1,6 +1,6 @@
 {
     "build": {
-        "dockerfile": "/workspaces/directory/subdirectory/Dockerfile",
+        "dockerfile": "/workspaces/cs-examples/directory/subdirectory/Dockerfile",
         "args": {
             "VARIANT": "focal"
         }
