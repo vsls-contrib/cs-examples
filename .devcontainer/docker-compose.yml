@@ -1,8 +1,14 @@
 services:
+  server:
+    build:
+      context: .
+      dockerfile: Server.Dockerfile
+    environment:
+      GREETING: "Hey there"
   app:
     build: 
       context: .
-      dockerfile: Dockerfile
+      dockerfile: App.Dockerfile
       target: base
     volumes:
       - ..:/workspace:cached
