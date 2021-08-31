@@ -5,4 +5,4 @@ WORKDIR /app
 RUN pip install -r requirements.txt
 ENTRYPOINT ["python"]
 EXPOSE 25250
-CMD ["app.py"]
+CMD ["server.py"]
