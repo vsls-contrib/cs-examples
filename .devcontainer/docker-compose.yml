@@ -1,0 +1,9 @@
+services:
+  app:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+      target: base
+    volumes:
+      - ..:/workspace:cached
+    command: /bin/sh -c 'env && sleep infinity'
