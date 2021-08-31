@@ -5,6 +5,8 @@ services:
       dockerfile: Server.Dockerfile
     environment:
       GREETING: "Hey there"
+    expose:
+      - "25250"
   app:
     build: 
       context: .
