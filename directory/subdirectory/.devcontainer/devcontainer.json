@@ -10,5 +10,6 @@
         "A_SIMPLE_KEY": "A_SIMPLE_VALUE"
     },
     "remoteUser": "mock-remote",
-    "containerUser": "mock-container"
+    "containerUser": "mock-container",
+    "postCreateCommand": "echo `whoami`> whoami.txt && bash ./run-me.sh"
 }
