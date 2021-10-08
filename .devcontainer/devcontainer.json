@@ -5,7 +5,7 @@
             "VARIANT": "focal"
         }
     },
-    "initializeCommand": "touch heythere.txt",
+    "initializeCommand": "touch heythere.txt && printenv > myenv.txt",
     "containerEnv": {
         "MY_LOCAL_HOME": "${localEnv:HOME}",
         "A_SIMPLE_KEY": "A_SIMPLE_VALUE"
