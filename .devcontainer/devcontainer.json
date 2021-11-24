@@ -1,12 +1,11 @@
 {
 	"name": "ContainerFeatures",
 	"build": {
-		"dockerfile": "Dockerfile",
-		"args": { "VARIANT": "focal" }
+		"dockerfile": "Dockerfile"
 	},
-    "containerEnv": {
-        "FROM_DEVCONTAINER": "yes"
-    },
+	"containerEnv": {
+	"FROM_DEVCONTAINER": "yes"
+	},
 	"extensions": [],
 	"remoteUser": "vscode",
 	"features": {
