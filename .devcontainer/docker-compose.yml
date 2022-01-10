@@ -8,10 +8,7 @@ services:
     expose:
       - "25250"
   app:
-    build: 
-      context: .
-      dockerfile: App.Dockerfile
-      target: base
+    image: mcr.microsoft.com/vscode/devcontainers/base:ubuntu
     volumes:
       - ..:/workspace:cached
     command: /bin/sh -c 'env && sleep infinity'
