@@ -1,0 +1,11 @@
+
+{
+  "name": "foobs",
+  "build": {
+        "dockerfile": "./Dockerfile",
+        "args": {
+            "VARIANT": "focal"
+        }
+   },
+  "postCreateCommand": "sh test.sh"
+}
