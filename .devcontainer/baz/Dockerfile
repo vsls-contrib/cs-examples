@@ -1,1 +1,2 @@
+ARG VARIANT
 FROM mcr.microsoft.com/vscode/devcontainers/base:${VARIANT}
