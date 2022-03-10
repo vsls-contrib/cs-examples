@@ -7,5 +7,5 @@
             "VARIANT": "focal"
         }
    },
-  "initializeCommand": "sh test.sh"
+  "initializeCommand": "touch baztest"
 }
