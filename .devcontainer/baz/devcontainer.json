@@ -7,5 +7,5 @@
             "VARIANT": "focal"
         }
    },
-  "postCreateCommand": "sh test.sh"
+  "initializeCommand": "sh test.sh"
 }
