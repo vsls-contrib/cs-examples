@@ -1,1 +1,3 @@
-{}
+{
+  "initializeCommand": "touch pathtest"
+}
