@@ -6,6 +6,5 @@
         "args": {
             "VARIANT": "focal"
         }
-   },
-  "initializeCommand": "touch baztest"
+   }
 }
