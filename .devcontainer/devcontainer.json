@@ -1,7 +1,7 @@
 {
     "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu",
     "codespaces": {
-        "permissions": [
+        "repositories": [
             {
                 "name": "vsls-contrib/second-repo",
                 "permissions": {
