@@ -12,5 +12,5 @@
     },
     "remoteUser": "mock-remote",
     "containerUser": "mock-container",
-    "postCreateCommand": "echo `whoami`> whoami.txt && bash ./run-me.sh"
+    "onCreateCommand": "echo $USER > USER.txt"
 }
