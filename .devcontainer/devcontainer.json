@@ -5,6 +5,6 @@
             "VARIANT": "focal"
         }
     },
-    "remoteUser": "codespacesuser",
-    "onCreateCommand": "echo $USER > USER.txt"
+    "onCreateCommand": "echo $USER > USER.txt",
+    "remoteUser": "vscode"
 }
