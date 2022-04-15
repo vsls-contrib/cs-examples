@@ -6,5 +6,5 @@
         }
     },
     "onCreateCommand": "echo $USER > USER.txt",
-    "remoteUser": "codespacesuser"
+    "remoteUser": "vscode"
 }
