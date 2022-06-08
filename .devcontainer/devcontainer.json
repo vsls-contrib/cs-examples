@@ -1,14 +1,5 @@
 {
-	"name": "ContainerFeatures",
-	"build": {
-		"dockerfile": "Dockerfile"
-	},
-	"containerEnv": {
-	"FROM_DEVCONTAINER": "yes"
-	},
-	"extensions": [],
-	"remoteUser": "vscode",
 	"features": {
-		"github-cli": "latest"
+		"microsoft/vscode-dev-containers/powershell": "latest"
 	}
 } 
