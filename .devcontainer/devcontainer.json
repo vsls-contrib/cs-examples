@@ -9,6 +9,6 @@
 	"extensions": [],
 	"remoteUser": "vscode",
 	"features": {
-		"github-cli": "latest"
+		"ghcr.io/devcontainers/features/github-cli:1": "latest"
 	}
 } 
