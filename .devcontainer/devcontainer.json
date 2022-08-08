@@ -6,6 +6,6 @@
 	"forwardPorts": [25250],
     "postAttachCommand": "curl server:25250 > ./validate.txt",
     "features" : {
-        "github-cli": "latest"
+        "ghcr.io/devcontainers/features/github-cli:1": "latest"
     }
 }
