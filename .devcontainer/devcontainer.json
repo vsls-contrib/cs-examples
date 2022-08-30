@@ -5,6 +5,7 @@
             "VARIANT": "focal"
         }
     },
+    "postAttachCommand": "echo hello >> foo.txt",
     "onCreateCommand": "echo $USER > USER.txt",
     "remoteUser": "vscode"
 }
