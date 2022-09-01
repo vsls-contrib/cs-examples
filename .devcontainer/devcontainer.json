@@ -13,5 +13,6 @@
     "onCreateCommand": "echo $USER > USER.txt",
     "remoteUser": "mock-remote",
     "containerUser": "mock-container",
-    "postCreateCommand": "echo `whoami`> whoami.txt && bash ./run-me.sh"
+    "postCreateCommand": "echo `whoami`> whoami.txt && bash ./run-me.sh",
+    "postAttachCommand": "echo postAttach >> postAttach.txt"
 }
