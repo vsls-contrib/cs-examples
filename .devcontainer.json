@@ -1,5 +1,20 @@
 {
-    "image": "ubuntu:latest",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": {
+            "VARIANT": "focal"
+        }
+    },
+    "initializeCommand": "touch heythere.txt && printenv > myenv.txt",
+    "containerEnv": {
+        "MY_LOCAL_HOME": "${localEnv:HOME}",
+        "A_SIMPLE_KEY": "A_SIMPLE_VALUE"
+    },
+    "onCreateCommand": "echo $USER > USER.txt",
+    "remoteUser": "mock-remote",
+    "containerUser": "mock-container",
+    "postCreateCommand": "echo `whoami`> whoami.txt && bash ./run-me.sh",
+    "postAttachCommand": "echo postAttach >> postAttach.txt",
     "features": {
         "docker-in-docker": { }
     }
