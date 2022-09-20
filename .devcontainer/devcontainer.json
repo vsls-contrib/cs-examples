@@ -14,5 +14,7 @@
     "remoteUser": "mock-remote",
     "containerUser": "mock-container",
     "postCreateCommand": "echo `whoami`> whoami.txt && bash ./run-me.sh",
-    "postAttachCommand": "echo postAttach >> postAttach.txt"
+    "postAttachCommand": "echo postAttach >> postAttach.txt",
+    "workspaceFolder": "/app",
+    "workspaceMount": "/app"
 }
