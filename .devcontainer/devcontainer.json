@@ -16,5 +16,5 @@
     "postCreateCommand": "echo `whoami`> whoami.txt && bash ./run-me.sh",
     "postAttachCommand": "echo postAttach >> postAttach.txt",
     "workspaceFolder": "/app",
-    "workspaceMount": "/app"
+    "workspaceMount" : "source=${localWorkspaceFolder},target=/app,type=bind,consistency=cached"
 }
