@@ -14,7 +14,7 @@
     "containerUser": "mock-container",
     "onCreateCommand": "echo onCreate && sleep 30 && echo finishedOnCreate",
     "updateContentCommand": "echo updateContent && sleep 30 && echo finishedUpdateContent",
-    "waitFor": "onCreateCommand",
+    "waitFor": "postCreateCommand",
     "postCreateCommand": "echo `whoami`> whoami.txt && bash ./run-me.sh",
     "postAttachCommand": "echo postAttach >> postAttach.txt",
     "workspaceFolder": "/app",
