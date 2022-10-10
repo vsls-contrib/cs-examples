@@ -1,3 +1,6 @@
 {
-    "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu"
+    "image": "ubuntu:latest",
+    "postCreateCommand": {
+        "wrong": "yarn start"
+      },
 }
