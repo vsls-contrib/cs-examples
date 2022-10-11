@@ -1,5 +1,12 @@
 {
-    "image": "ubuntu:latest",
+    "build": {
+      "dockerfile": "Dockerfile",
+      "args": {
+          "VARIANT": "focal"
+      }
+    },
+    "remoteUser": "mock-remote",
+    "containerUser": "mock-container",
     "postCreateCommand": {
         "wrong": "yarn start"
       },
