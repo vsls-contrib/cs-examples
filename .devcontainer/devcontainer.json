@@ -4,5 +4,5 @@
     "workspaceFolder": "/workspace",
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [25250],
-    "postAttachCommand": "curl server:25250 > ./validate.txt"
+    "postStartCommand": "curl server:25250 > ./validate.txt"
 }
