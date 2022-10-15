@@ -1,6 +1,12 @@
 {
-    "settings": {
-        "editor.formatOnSave": false,
-        "python.linting.pylintEnabled": "false"
-     }
+  "settings": {
+    "editor.formatOnSave": false,
+     "python.linting.pylintEnabled": "false"
+  },
+  "portsAttributes": {
+    "3000": {
+      "label": "Application",
+      "onAutoForward": "openPreview"
+    }
+  }
 }
