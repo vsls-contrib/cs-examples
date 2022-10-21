@@ -1,5 +1,5 @@
 {
     "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu",
-    "postCreateCommand": "apt update && apt install -y yarn && yarn",
+    "postCreateCommand": "./install-yarn.sh",
     "waitFor": "postCreateCommand"
 }
