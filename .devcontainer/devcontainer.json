@@ -1,5 +1,5 @@
 {
     "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu",
-    "postCreateCommand": "./install-yarn.sh",
+    "postCreateCommand": "./install-yarn.sh && echo change > change.txt",
     "waitFor": "postCreateCommand"
 }
