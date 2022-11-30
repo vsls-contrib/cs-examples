@@ -1,4 +1,4 @@
-ARG VARIANT=focal
+ARG VARIANT=0-bullseye
 FROM mcr.microsoft.com/vscode/devcontainers/base:${VARIANT}
 
 RUN useradd -ms /bin/bash mock-container
