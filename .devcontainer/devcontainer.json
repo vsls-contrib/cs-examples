@@ -2,7 +2,7 @@
     "build": {
         "dockerfile": "Dockerfile",
         "args": {
-            "VARIANT": "focal"
+            "VARIANT": "0-bullseye"
         }
     },
     "initializeCommand": "touch heythere.txt && printenv > myenv.txt",
