@@ -10,6 +10,10 @@
         "MY_LOCAL_HOME": "${localEnv:HOME}",
         "A_SIMPLE_KEY": "A_SIMPLE_VALUE"
     },
+    "remoteEnv": {
+        "PATH": "/test/path:${containerEnv:PATH}",
+        "TEST_REMOTE_ENV": "test"
+    },
     "remoteUser": "mock-remote",
     "containerUser": "mock-container",
     "onCreateCommand": "echo onCreate && sleep 2 && echo $USER > USER.txt",
