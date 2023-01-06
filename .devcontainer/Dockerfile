@@ -6,6 +6,3 @@ RUN useradd -ms /bin/bash mock-remote
 
 # Add a pre-existing ~/.docker folder so we can verify the fix for https://github.com/github/codespaces/issues/7185
 RUN mkdir /home/mock-remote/.docker
-
-# Install pip3
-RUN apt update && apt install -y python3-pip

@@ -19,7 +19,7 @@
     "onCreateCommand": "echo onCreate && sleep 2 && echo $USER > USER.txt",
     "updateContentCommand": "echo updateContent && sleep 2 && echo finishedUpdateContent",
     "waitFor": "onCreateCommand",
-    "postCreateCommand": "echo `whoami`> whoami.txt && bash ./run-me.sh && pip3 install -r grpc-client/requirements.txt",
+    "postCreateCommand": "echo `whoami`> whoami.txt && bash ./run-me.sh",
     "postAttachCommand": "echo postAttach >> postAttach.txt",
     "workspaceFolder": "/app",
     "workspaceMount" : "source=${localWorkspaceFolder},target=/app,type=bind,consistency=cached"
