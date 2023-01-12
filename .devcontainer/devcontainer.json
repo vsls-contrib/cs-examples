@@ -3,5 +3,9 @@
     "settings": {
         "editor.formatOnSave": false,
         "python.linting.pylintEnabled": "false"
-     }
+     },
+     "remoteEnv": {
+        "PATH": "/test/path:${containerEnv:PATH}",
+        "TEST_REMOTE_ENV": "test"
+    }
 }
