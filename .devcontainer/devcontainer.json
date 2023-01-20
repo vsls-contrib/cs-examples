@@ -1,3 +1,4 @@
 {
-    "image": "mcr.microsoft.com/devcontainers/python:3"
+    "image": "mcr.microsoft.com/devcontainers/python:3",
+    "onCreateCommand": "python3 -m pip install --user jupyterlab"
 }
