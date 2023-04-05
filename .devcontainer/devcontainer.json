@@ -3,7 +3,7 @@
   "initializeCommand": ".devcontainer/run.sh initializeCommand",
   "onCreateCommand": ".devcontainer/run.sh onCreateCommand",
   "updateContentCommand": ".devcontainer/run.sh updateContentCommand",
-  "postCreateCommand": ".devcontainer/run.sh postCreateCommand",
-  "postStartCommand": ".devcontainer/run.sh postStartCommand",
+  "postCreateCommand": "sleep 15 && .devcontainer/run.sh postCreateCommand",
+  "postStartCommand": "sleep 15 && .devcontainer/run.sh postStartCommand",
   "postAttachCommand": ".devcontainer/run.sh postAttachCommand"
 }
