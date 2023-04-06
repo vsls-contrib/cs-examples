@@ -3,6 +3,7 @@
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
+        "remoteUser": "vscode",
 	"features": {
 		"ghcr.io/vmagentlocal/features/panda": {}
 	  }
