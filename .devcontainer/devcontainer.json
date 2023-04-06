@@ -1,14 +1,9 @@
 {
-	"name": "ContainerFeatures",
+	"name": "PrivateContainerFeatures",
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
-	"containerEnv": {
-	"FROM_DEVCONTAINER": "yes"
-	},
-	"extensions": [],
-	"remoteUser": "vscode",
 	"features": {
-		"ghcr.io/devcontainers/features/github-cli:1": "latest"
-	}
+		"ghcr.io/vmagentlocal/features/panda": {}
+	  }
 } 
