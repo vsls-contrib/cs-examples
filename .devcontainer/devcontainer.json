@@ -6,6 +6,6 @@
         "remoteUser": "vscode",
 	"features": {
 		"ghcr.io/vmagentlocal/features/panda": {},
-		"privatedevcontainercli.azurecr.io/features/b": {}
+		"privatedevcontainercli.azurecr.io/features/rabbit:latest": {}
 	  }
 } 
