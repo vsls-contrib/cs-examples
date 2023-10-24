@@ -2,7 +2,5 @@
     "dockerComposeFile": "docker-compose.yml",
     "service": "app",
     "workspaceFolder": "/workspace",
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [25250],
     "postStartCommand": "curl server:25250 > ./validate.txt"
 }
