@@ -11,5 +11,6 @@
 	"features": {
 		"ghcr.io/devcontainers/features/github-cli:1": "latest",
 		"ghcr.io/devcontainers/features/sshd:1": {}
-	}
+	},
+	"postAttachCommand": "echo test >> /workspaces/cs-examples/postAttachCommand.txt"
 } 
