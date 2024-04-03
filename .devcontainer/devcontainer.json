@@ -1,26 +1,3 @@
 {
-    "build": {
-        "dockerfile": "Dockerfile",
-        "args": {
-            "VARIANT": "focal"
-        }
-    },
-    "initializeCommand": "touch heythere.txt && printenv > myenv.txt",
-    "containerEnv": {
-        "MY_LOCAL_HOME": "${localEnv:HOME}",
-        "A_SIMPLE_KEY": "A_SIMPLE_VALUE"
-    },
-    "remoteEnv": {
-        "PATH": "/test/path:${containerEnv:PATH}",
-        "TEST_REMOTE_ENV": "test"
-    },
-    "remoteUser": "mock-remote",
-    "containerUser": "mock-container",
-    "onCreateCommand": "echo onCreate && sleep 2 && echo $USER > USER.txt",
-    "updateContentCommand": "echo updateContent && sleep 2 && echo finishedUpdateContent",
-    "waitFor": "onCreateCommand",
-    "postCreateCommand": "echo `whoami`> whoami.txt && bash ./run-me.sh",
-    "postAttachCommand": "echo postAttach >> postAttach.txt",
-    "workspaceFolder": "/app",
-    "workspaceMount" : "source=${localWorkspaceFolder},target=/app,type=bind,consistency=cached"
+    "image": "mcr.microsoft.com/devcontainers/go:1.22-bookworm"
 }
