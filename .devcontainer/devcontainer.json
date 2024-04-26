@@ -3,6 +3,7 @@
 	"hostRequirements": {
 		"cpu": 4
 	},
+	"postCreateCommand": "",
 	"postAttachCommand": "echo Hello World!",
 	"portsAttributes": {
             "1234": {
@@ -17,7 +18,9 @@
             "codespaces": {
                 "openFiles": [
                     "src/index.jsx"
-                ]
+                ],
+		"skipOryx": true,
+		"experimentalGitHooks": ".githooks"
             }
 	}
 } 
