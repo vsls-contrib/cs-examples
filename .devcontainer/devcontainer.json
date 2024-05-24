@@ -14,12 +14,18 @@
 	"forwardPorts": [
             1234
 	],
+	"tasks": {
+		    "build": "foo",
+						"test": "bar",
+						"launch": "baz"
+		},
 	"customizations": {
             "codespaces": {
                 "openFiles": [
                     "src/index.jsx"
                 ],
-		"skipOryx": true
+		              "skipOryx": true,
+		              "experimentalGitHooks": ".githooks"
             }
 	}
 } 
