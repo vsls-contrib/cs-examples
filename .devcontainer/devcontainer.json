@@ -1,3 +1,9 @@
 {
-    "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu"
+    "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu",
+    "postCreateCommand": "${tasks:build} && ${tasks:test} && ${tasks:launch}",
+    "tasks": {
+        "build": "touch ran-build",
+        "test": "touch ran-test",
+        "launch": "touch ran-launch"
+    }
 }
