@@ -1,26 +1,32 @@
 {
-	"image": "mcr.microsoft.com/devcontainers/universal:2",
-	"hostRequirements": {
-		"cpu": 4
-	},
-	"postCreateCommand": "",
-	"postAttachCommand": "echo Hello World!",
-	"portsAttributes": {
-            "1234": {
-	      "label": "Application",
-	      "onAutoForward": "openPreview"
-            }
-	},
-	"forwardPorts": [
-            1234
-	],
-	"customizations": {
-            "codespaces": {
-                "openFiles": [
-                    "src/index.jsx"
-                ],
-		"skipOryx": true,
-		"experimentalGitHooks": ".githooks"
-            }
-	}
+    "image": "mcr.microsoft.com/devcontainers/universal:2",
+    "hostRequirements": {
+        "cpu": 4
+    },
+    "postCreateCommand": "",
+    "postAttachCommand": "echo Hello World!",
+    "portsAttributes": {
+        "1234": {
+            "label": "Application",
+            "onAutoForward": "openPreview"
+        }
+    },
+    "forwardPorts": [
+        1234
+    ],
+    "tasks": {
+        "build": "foo",
+        "test": "bar",
+        "launch": "baz"
+    },
+    "customizations": {
+        "codespaces": {
+            "openFiles": [
+                "src/index.jsx"
+            ],
+            "skipOryx": true,
+            "disableAutomaticConfiguration": true,
+            "experimentalGitHooks": ".githooks"
+        }
+    }
 } 
